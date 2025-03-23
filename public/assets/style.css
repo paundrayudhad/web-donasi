@@ -1,0 +1,275 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: white ;
+  transition: none ;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: white ;
+  background-color: transparent ;
+}
+
+.hero {
+  position: relative;
+  background: url("./image/BG.png") center/cover no-repeat;
+  height: 80vh;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.8) 30%,
+      rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary {
+  background-color: #625bff;
+  border-color: #625bff;
+}
+
+.btn-primary:hover {
+  background-color: #4d47cc;
+}
+
+.super-bold {
+  font-weight: 900;
+}
+
+.break-text {
+  display: block;
+}
+
+.text-light-gray {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stats-section {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+}
+
+.donasi-section {
+  padding: 80px 0;
+  background-color: #f8fbfd;
+}
+
+.donasi-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #2a2c39;
+}
+
+.donasi-subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.donasi-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.donation-section {
+  padding: 80px 0;
+}
+
+.donation-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.donation-subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.donation-img img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.donation-img {
+  position: relative;
+  display: inline-block;
+}
+
+.donation-section {
+  background-color: #F8FAFD;
+}
+
+.donation-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2A2C39;
+}
+
+.donation-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  background-color: #d7cbea;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #833bf0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.step-title {
+  font-weight: bold;
+  color: #2A2C39;
+}
+
+.step-desc {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.video-container img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.play-button span {
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #5ff03b;
+}
+
+.quote-section {
+  position: relative;
+  background: url('./image/quote.png') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.quote-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.quote-text {
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 700px;
+  margin: 15px auto 0;
+}
+
+.nav-tabs .nav-link {
+  color: #444;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #473BF0;
+}
+
+.nav-tabs .nav-link.active {
+  color: #473BF0;
+}
+
+.tab-content {
+  max-width: 860px;
+  margin: left;
+}
+
+.img-campaign{
+  height: 160px !important;
+  object-fit: cover;
+}
+.img-article{
+  height: 200px !important;
+  object-fit: cover;
+}
+.heading-section {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #473bf0;
+  color: #fff;
+}
+.mt-20{
+  margin-top: 90px;
+}
+.article-thumbnail{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+article img{
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.thumbnail-campaign{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+} 
