@@ -40,6 +40,7 @@ class CampaignController extends Controller
             'code' => 'DONATION-' . Str::random(5),   
             'amount' => $request['amount'],
             'name' => $request['name'],
+            'phone' => $request['phone'],
             'status' => 'pending',
         ]);
 
@@ -66,5 +67,9 @@ class CampaignController extends Controller
         $paymentUrl = \Midtrans\Snap::createTransaction($params)->redirect_url;
 
         return redirect($paymentUrl);
+    }
+    public function success()
+    {
+        return view('pages.campaign.donation-success');
     }
 }

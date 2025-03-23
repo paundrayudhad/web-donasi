@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,5 +24,8 @@ class AppServiceProvider extends ServiceProvider
         //use Paginator bootstrap
 
         Paginator::useBootstrap();
+        if (str_contains(request()->url(), 'ngrok-free.app')) {
+            URL::forceScheme('https');
+        }
     }
 }

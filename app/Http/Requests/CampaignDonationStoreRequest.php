@@ -24,7 +24,8 @@ class CampaignDonationStoreRequest extends FormRequest
         return [
             //
             'amount' => 'required|numeric', // amount is required and must be numeric amount harus diisi dan harus berupa angka
-            'name' => 'required|string', // name is required and must be string name harus diisi dan harus berupa string
+            'name' => 'required|string',
+            'phone' => 'required|string' // name is required and must be string name harus diisi dan harus berupa string
         ];
     }
     public function messages()
@@ -34,6 +35,8 @@ class CampaignDonationStoreRequest extends FormRequest
             'amount.numeric' => 'Jumlah donasi Harus berupa angka',
             'name.required' => 'Nama Harus diisi',
             'name.string' => 'Nama Harus berupa string',
+            'phone.required' => 'Nomor Telepon Harus diisi',
+            'phone.string' => 'Nomor Telepon Harus berupa string'
         ];
     }   
 }

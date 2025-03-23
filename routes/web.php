@@ -19,3 +19,4 @@ Route::get('/campaign', [CampaignController::class, 'index'])->name('campaign.in
 Route::get('/campaign/{slug}', [CampaignController::class, 'show'])->name('campaign.show');
 Route::get('/campaign/{slug}/donation', [CampaignController::class, 'donation'])->name('campaign.donation');
 Route::post('/campaign/{slug}/donation', [CampaignController::class, 'storeDonation'])->name('campaign.storeDonation');
+Route::get('/donation-success', [CampaignController::class, 'success'])->name('campaign.success');

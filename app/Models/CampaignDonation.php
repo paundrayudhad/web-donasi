@@ -11,6 +11,7 @@ class CampaignDonation extends Model
         'code',
         'campaign_id',
         'name',
+        'phone',
         'amount',
         'status'
     ];
